@@ -7,6 +7,7 @@ import InternSignIn from "./pages/internSignin";
 import Company from "./pages/company";
 import InternRegister from "./pages/internRegister";
 import About from "./pages/About";
+import CompanyD from "./pages/companyD";
 
 
 import "./App.css";
@@ -46,7 +47,14 @@ const router = createBrowserRouter([
         path: "/about",
         element: <About />,
     },
+<<<<<<< Updated upstream
 
+=======
+    {
+        path: "/CompanyD",
+        element: <CompanyD />,
+    }
+>>>>>>> Stashed changes
 ]);
 
 function App() {

@@ -12,7 +12,7 @@ export default class LandingPage extends Component {
         return (
             <section className="page-1">
                 <nav>
-                    <div className="logo">DevBase</div>
+                    <div className="logo"><a href='#'>DevBase</a></div>
                     <div className="nav-links">
                         <a href="home">Home</a>
                         <a href="about">About</a>
@@ -46,10 +46,10 @@ export default class LandingPage extends Component {
                     </button>
 
                 </div>
-                
+
 
             </section>
-            
+
         );
     }
 }
