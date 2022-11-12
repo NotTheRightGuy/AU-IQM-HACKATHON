@@ -12,7 +12,7 @@ export default class LandingPage extends Component {
         return (
             <section className="page-1">
                 <nav>
-                    <div className="logo"><a href = '#'>DevBase</a></div>
+                    <div className="logo">DevBase</div>
                     <div className="nav-links">
                         <a href="home">Home</a>
                         <a href="about">About</a>
@@ -30,10 +30,10 @@ export default class LandingPage extends Component {
                 </nav>
                 <div className="content">
                     <div className="tagLine">
-                        WHERE ANYONE CAN MEET THEIR FULL POTENTIAL
+                        ABOUT US
                     </div>
                     <div className="subLine">
-                        Bridging the gap between interns and company
+                        Students of Adani University learning to code and build projects and a website useful to bridging the gap between interns and companies.
                     </div>
 
                     <button

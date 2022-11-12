@@ -14,8 +14,7 @@ if ((isset($_POST["add"]))) {
 
         // Intern Database Connection
         // Enter new Entry
-
-=======
+    }
     if ( $compname && $email && $pass_word ) {
         
         $query = "INSERT INTO company
