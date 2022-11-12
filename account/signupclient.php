@@ -15,6 +15,39 @@ if ((isset($_POST["add"]))) {
         // Intern Database Connection
         // Enter new Entry
 
+=======
+    if ( $compname && $email && $pass_word ) {
+        
+        $query = "INSERT INTO company
+                    (comp_name, comp_add, comp_phone, comp_web, comp_desc)
+                    VALUES
+                    ('$compname', '$addr', '$phone', '$web', '$desc')";
+            
+        $result1 = mysqli_query($conn, $query);        
+    
+        if ($result1) {
+            echo "<div class='alert alert-success'>New record in database!</div>";
+        } else {
+            echo "Error: " . $query . "<br>" . mysqli_error($conn);
+        }
+        
+        $query2 = "INSERT INTO clients
+                    (email, pass_word)
+                    VALUES
+                    ('$email', '$pass_word')";
+        
+        $result2 = mysqli_query($conn, $query2);
+    
+        if ($result2) {
+            echo "<div class='alert alert-success'>New record in database!</div>";
+        } else {
+            echo "Error: " . $query . "<br>" . mysqli_error($conn);
+        }
+        
+        if ($result1 && $result2) {
+            header("Location: ../client/src/main.jsx");
+        }
+      
     }
 
     mysqli_close($conn);
