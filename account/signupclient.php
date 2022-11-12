@@ -49,7 +49,7 @@ if ((isset($_POST["add"]))) {
 
     <div id="navbar"></div>
     
-    <div class='container-fluid'>
+    <div class='container'>
         <!-- <div class="pb-2 mt-4 mb-2 border-bottom">
             <h1></h1>
             <p class="lead">Sign Up to Greatness. WebsiteName - Your One Way In to the Tech World</p>
@@ -59,7 +59,7 @@ if ((isset($_POST["add"]))) {
 
         ?>
 
-        <div class="w-50 border rounded-5 border-secondary shadow d-flex justify-content-center mx-auto mb-5" style="margin-top: 100px;">
+        <div class="w-75 border rounded-5 border-secondary shadow d-flex justify-content-center mx-auto mb-5" style="margin-top: 100px;">
             <form action="<?php
                             // echo $_SERVER['PHP_SELF'];
                             echo htmlspecialchars($_SERVER["PHP_SELF"]);
