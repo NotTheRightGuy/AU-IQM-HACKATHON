@@ -3,6 +3,9 @@ import "../styles/landingPage.css";
 
 // The Homepage JSX
 // The button in this page redirect to the sign up/sign in page depending on the user's status.
+// The button is a link to the sign up/sign in page.
+// The button is a link to the profile page.
+// 
 
 export default class LandingPage extends Component {
     render() {

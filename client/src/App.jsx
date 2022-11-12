@@ -1,3 +1,5 @@
+// The JSX file which redirects to the Main page
+
 import LandingPage from "./pages/landingpage";
 import Sign from "./pages/signin";
 import Profile from "./pages/profile";
