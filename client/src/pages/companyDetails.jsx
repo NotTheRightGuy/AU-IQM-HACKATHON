@@ -29,7 +29,7 @@ class Profile extends Component {
                         <div className="generalOverView">
                             <p>Company Details.</p>
                             Hello, This is Elon Musk. I'm the CEO of Tesla and
-                            SpaceX. I'm also the founder of Neuralink and 
+                            SpaceX. I'm also the founder of Neuralink and
                             OpenAI. I'm also the founder of Neuralink and
                             OpenAI. I'm also the founder of Neuralink and
                             OpenAI. I'm also the founder of Neuralink and
