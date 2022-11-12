@@ -1,20 +1,97 @@
 <?php
 
 // Connect to the database
-// include('connection.php');
+include('connection.php');
 
-if ((isset($_POST["add"]))) {
+if ((isset($_POST["signup"]))) {
 
-    if ($_GET['client']) {
+    // build a function that validates data
+    function validateFormData($formData)
+    {
+        $formData = trim(stripslashes(htmlspecialchars($formData)));
+        return $formData;
+    }
 
-        // Client Database Connection
-        // Enter new Entry
+    // check to see if inputs are empty
+    // create variables with form data
+    // wrap the data with our function
+    if (!$_POST["comp_name"]) {
+        $compnameError = "Please enter your Company Name <br>";
+    } else {
+        $compname = validateFormData($_POST["comp_name"]);
+    }
 
-    } else if ($_GET['intern']) {
+    if (!$_POST["number"]) {
+        $numberError = "Please enter your Phone Number <br>";
+    } else {
+        $phone = validateFormData($_POST["number"]);
+    }
 
-        // Intern Database Connection
-        // Enter new Entry
+    if (!$_POST["email"]) {
+        $emailError = "Please enter your email <br>";
+    } else {
+        $email = validateFormData($_POST["email"]);
+    }
 
+    if (!$_POST["pass_word"]) {
+        $passwordError = "Please enter your password <br>";
+    } else {
+        $pass_word = validateFormData($_POST["pass_word"]);
+        // $my_password = password_hash($pass_word, PASSWORD_DEFAULT);
+    }
+
+    if (!$_POST["web"]) {
+        $webError = "Please enter your gender <br>";
+    } else {
+        $web = validateFormData($_POST["web"]);
+        // $my_password = password_hash($pass_word, PASSWORD_DEFAULT);
+    }
+
+    if (!$_POST["desc"]) {
+        $descError = "Please enter your dob <br>";
+    } else {
+        $desc = validateFormData($_POST["desc"]);
+        // $my_password = password_hash($pass_word, PASSWORD_DEFAULT);
+    }
+
+    if (!$_POST["house"]) {
+        $addrError = "Please enter your address <br>";
+    } else {
+        $addr = validateFormData($_POST["house"]);
+        // $my_password = password_hash($pass_word, PASSWORD_DEFAULT);
+    }
+
+    if (!$_POST["country"]) {
+        $countryError = "Please enter your country <br>";
+    } else {
+        $country = validateFormData($_POST["country"]);
+        // $my_password = password_hash($pass_word, PASSWORD_DEFAULT);
+    }
+
+    if ( $compname && $email && $pass_word ) {
+        
+        $query = "INSERT INTO company
+                    (comp_name, comp_add, comp_phone, comp_web, comp_desc)
+                    VALUES
+                    ('$compname', '$addr', '$phone', '$web', '$desc')";
+    
+        if (mysqli_query($conn, $query)) {
+            echo "<div class='alert alert-success'>New record in database!</div>";
+        } else {
+            echo "Error: " . $query . "<br>" . mysqli_error($conn);
+        }
+        
+        $query2 = "INSERT INTO clients
+                    (email, pass_word)
+                    VALUES
+                    ('$email', '$pass_word')";
+    
+        if (mysqli_query($conn, $query2)) {
+            echo "<div class='alert alert-success'>New record in database!</div>";
+        } else {
+            echo "Error: " . $query . "<br>" . mysqli_error($conn);
+        }
+        
     }
 
     mysqli_close($conn);
@@ -38,17 +115,17 @@ if ((isset($_POST["add"]))) {
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     <script src="//code.jquery.com/jquery-3.6.1.min.js"></script>
-    <script> 
-    $(function(){
-      $("#navbar").load("navbar.html"); 
-    });
+    <script>
+        $(function() {
+            $("#navbar").load("navbar.html");
+        });
     </script>
 </head>
 
 <body>
 
     <div id="navbar"></div>
-    
+
     <div class='container'>
         <!-- <div class="pb-2 mt-4 mb-2 border-bottom">
             <h1></h1>
@@ -69,17 +146,12 @@ if ((isset($_POST["add"]))) {
                 <hr>
                 <p class="text-danger">* Required Fields</p>
                 <br>
-                <label for="firstname" class="mt-auto fw-bold">First Name</label><small class="text-danger">*</small>
+                <label for="firstname" class="mt-auto fw-bold">Company Name</label><small class="text-danger">*</small>
                 <br>
-                <input type="text" placeholder="e.g: Recruiter's First Name" name="first_name" id="firstname" class="form-control form-control-input">
-                <br>
-
-                <label for="lastname" class="mt-4 fw-bold">Last Name</label><small class="text-danger">*</small>
-                <br>
-                <input type="text" placeholder="e.g: Recruiter's Last Name" name="last_name" id="lastname" class="form-control form-control-input">
+                <input type="text" placeholder="e.g: Recruiter's Company Name" name="comp_name" id="firstname" class="form-control form-control-input">
                 <br>
 
-                <label for="email_id" class="mt-4 fw-bold">Email</label><small class="text-danger">*</small>
+                <label for="email_id" class="mt-4 fw-bold">Company Email</label><small class="text-danger">*</small>
                 <br>
                 <input type="text" placeholder="Work Email Address" name="email" id="email_id" class="form-control form-control-input">
                 <br>
@@ -153,8 +225,23 @@ if ((isset($_POST["add"]))) {
                 <br>
                 <input type="text" placeholder="e.g.: 382421" name="city" id="city" class="form-control form-control-input">
 
+                <label for="phone" class="mt-4 fw-bold">Phone</label>
+                <small class="text-danger">*</small>
                 <br>
-                <a href="login.php" value="Sign Up" name="signup" class="mt-4 btn btn-primary mb-4">Sign Up</a>
+                <input type="text" placeholder="123456789" name="number" id="phone" class="form-control form-control-input">
+
+                <label for="web" class="mt-4 fw-bold">Website</label>
+                <small class="text-danger">*</small>
+                <br>
+                <input type="text" placeholder="www.google.com" name="web" id="web" class="form-control form-control-input">
+
+                <label for="description" class="mt-4 fw-bold">Description</label>
+                <small class="text-danger">*</small>
+                <br>
+                <input type="textarea" placeholder="Describe Your Company Here" name="desc" id="description" class="form-control form-control-input">
+
+                <br>
+                <button type="submit" name="signup" class="mt-4 btn btn-primary mb-4">Sign Up</button>
                 <br>
 
                 <p>Already have an account? <a href="login.php" class="text-primary">Login</a></p>
