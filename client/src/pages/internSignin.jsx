@@ -9,9 +9,8 @@ function InternSignIn() {
 
     async function handleSubmit(event) {
         event.preventDefault();
-        console.log("Registering");
-        const response = await fetch("http://localhost:5000/api/intern/login", {
-            method: "POST",
+        const response = await fetch("http://localhost:3000/api/intern/users", {
+            method: "GET",
             headers: {
                 "Content-Type": "application/json",
             },

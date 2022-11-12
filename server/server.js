@@ -25,9 +25,9 @@ mongoose.connect(
 );
 
 const userSchema = new mongoose.Schema({
-    name: { String, unique: true },
-    mail: { String, unique: true },
-    password: { String, unique: true },
+    name: { String },
+    mail: { String },
+    password: { String },
 });
 
 const user = mongoose.model("user-data", userSchema);
@@ -42,12 +42,17 @@ app.post("/api/intern/new-user", async (req, res) => {
         await newUser.save();
         console.log("New user added");
     } catch (err) {
-        console.log("User Already Exists");
+        console.log("Failed to add user");
     }
 });
 
-app.get("/api/intern/list", (req, res) => {
-    console.log("GET request received");
+app.get("api/intern/users", async (req, res) => {
+    try {
+        const users = await user.find();
+        res.send(users);
+    } catch (err) {
+        console.log("Couldn't fetch users");
+    }
 });
 
 app.listen(3000, () => {
