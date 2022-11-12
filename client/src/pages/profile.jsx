@@ -1,9 +1,10 @@
 import React, { Component } from "react";
+import Nav from "../components/nav";
 import "../styles/profile.css";
 
 class Profile extends Component {
     render() {
-        return <div>Hello World</div>;
+        return <Nav />;
     }
 }
 
