@@ -20,7 +20,14 @@ export default class Sign extends Component {
                         Login
                     </button>
                     <div className="registerPrompt">Don't have an account?</div>
-                    <button className="internRegister">Register Here</button>
+                    <button
+                        className="internRegister"
+                        onClick={() => {
+                            window.location.href = "/internRegister";
+                        }}
+                    >
+                        Register Here
+                    </button>
                 </div>
                 <div className="company">
                     <div className="outerTag">For Company</div>
