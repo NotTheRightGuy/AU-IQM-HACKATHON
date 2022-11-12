@@ -5,6 +5,7 @@ import Sign from "./pages/signin";
 import Profile from "./pages/profile";
 import InternSignIn from "./pages/internSignin";
 import Company from "./pages/company";
+import About from "./pages/About";
 
 import "./App.css";
 import { createBrowserRouter, RouterProvider, Route } from "react-router-dom";
@@ -12,6 +13,10 @@ import { createBrowserRouter, RouterProvider, Route } from "react-router-dom";
 const router = createBrowserRouter([
     {
         path: "/",
+        element: <LandingPage />,
+    },
+    {
+        path: "/home",
         element: <LandingPage />,
     },
     {
@@ -29,7 +34,11 @@ const router = createBrowserRouter([
     {
         path: "/company",
         element: <Company />,
-    }
+    },
+    {
+        path: "/about",
+        element: <About />,
+    },
 ]);
 
 function App() {
