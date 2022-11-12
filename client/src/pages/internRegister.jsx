@@ -11,16 +11,16 @@ function InternRegister() {
     async function handleRegister(event) {
         event.preventDefault();
         const response = await fetch(
-            "http://localhost:5000/api/intern/register",
+            "http://localhost:3000/api/intern/new-user",
             {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
                 },
                 body: JSON.stringify({
+                    name: name,
                     mail: mail,
                     password: password,
-                    name: name,
                 }),
             }
         );
