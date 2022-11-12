@@ -11,7 +11,14 @@ export default class Sign extends Component {
                         Join over million Interns on the quest to become the
                         best you
                     </div>
-                    <button className="internLogin">Login</button>
+                    <button
+                        className="internLogin"
+                        onClick={() => {
+                            window.location.href = "/internSignIn";
+                        }}
+                    >
+                        Login
+                    </button>
                     <div className="registerPrompt">Don't have an account?</div>
                     <button className="internRegister">Register Here</button>
                 </div>

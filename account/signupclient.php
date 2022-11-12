@@ -1,9 +1,26 @@
-<!-- The Client signup page
-    This Page is redirected from the homepage when the user clicks on the signup button and clicks on the "For Company" button.
-    This page is used to register a new client. It takes details like Email, Password, Company Name, Company Address, Company Phone Number, Company Website, Company Description.
-    In case the user already has an account, it will redirect the user to sign in page instead.
+<?php
 
--->
+// Connect to the database
+// include('connection.php');
+
+if ((isset($_POST["add"]))) {
+
+    if ($_GET['client']) {
+
+        // Client Database Connection
+        // Enter new Entry
+
+    } else if ($_GET['intern']) {
+
+        // Intern Database Connection
+        // Enter new Entry
+
+    }
+
+    mysqli_close($conn);
+}
+
+?>
 
 <!DOCTYPE html>
 <html lang="en">

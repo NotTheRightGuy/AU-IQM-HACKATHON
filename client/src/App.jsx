@@ -3,6 +3,7 @@
 import LandingPage from "./pages/landingpage";
 import Sign from "./pages/signin";
 import Profile from "./pages/profile";
+import InternSignIn from "./pages/internSignin";
 
 import "./App.css";
 import { createBrowserRouter, RouterProvider, Route } from "react-router-dom";
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
     {
         path: "/profile",
         element: <Profile />,
+    },
+    {
+        path: "/internSignIn",
+        element: <InternSignIn />,
     },
 ]);
 
