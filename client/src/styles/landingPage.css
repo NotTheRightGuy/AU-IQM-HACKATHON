@@ -99,3 +99,7 @@ nav {
     color: black;
     transform: translateY(-8px);
 }
+
+.TestingS {
+    flex: auto;
+}
