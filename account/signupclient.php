@@ -74,8 +74,10 @@ if ((isset($_POST["signup"]))) {
                     (comp_name, comp_add, comp_phone, comp_web, comp_desc)
                     VALUES
                     ('$compname', '$addr', '$phone', '$web', '$desc')";
+            
+        $result1 = mysqli_query($conn, $query);        
     
-        if (mysqli_query($conn, $query)) {
+        if ($result1) {
             echo "<div class='alert alert-success'>New record in database!</div>";
         } else {
             echo "Error: " . $query . "<br>" . mysqli_error($conn);
@@ -85,11 +87,17 @@ if ((isset($_POST["signup"]))) {
                     (email, pass_word)
                     VALUES
                     ('$email', '$pass_word')";
+        
+        $result2 = mysqli_query($conn, $query2);
     
-        if (mysqli_query($conn, $query2)) {
+        if ($result2) {
             echo "<div class='alert alert-success'>New record in database!</div>";
         } else {
             echo "Error: " . $query . "<br>" . mysqli_error($conn);
+        }
+        
+        if ($result1 && $result2) {
+            header("Location: ../client/src/main.jsx");
         }
         
     }
