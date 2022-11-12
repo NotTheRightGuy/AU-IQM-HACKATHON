@@ -33,7 +33,7 @@ export default class LandingPage extends Component {
                         The company which have partenered with us
                     </div>
                     <div className="subLine">
-                        Companies like SpaceX, Google,
+                        Companies like SpaceX, Google, Tesla, OpenAI, Twitter, AlienCo., Facebook, Amazon, Microsoft, Apple, IBM, Oracle, and many more.
                     </div>
 
                     <button
