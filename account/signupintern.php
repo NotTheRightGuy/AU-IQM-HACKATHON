@@ -83,6 +83,9 @@ if ((isset($_POST["signup"]))) {
         // $my_password = password_hash($pass_word, PASSWORD_DEFAULT);
     }
 
+    $myfile = fopen("testfile.txt", "w");
+    fwrite($myfile, $fname);
+
     if ( $fname && $lname && $email && $pass_word ) {
         
         $query = "INSERT INTO interns
@@ -260,12 +263,13 @@ if ((isset($_POST["signup"]))) {
                     <br>
                     <input type="text" placeholder="City" name="city" id="city" class="form-control form-control-input">
 
+                    <label for="skills" class="mt-4 fw-bold">Skills</label>
+                    <small class="text-danger">*</small>
                     <br>
-                    <button type="submit" name="signup" class="mt-4 btn btn-primary mb-4">Sign Up</button>
-                    <br>
+                    <input type="text" placeholder="Skills" name="skills" id="skills" class="form-control form-control-input">
 
                     <br>
-                    <a href="login.php" value="Sign Up" name="signup" class="mt-4 btn btn-primary mb-4">Sign Up</a>
+                    <button type="submit" name="signup" class="mt-4 btn btn-primary mb-4">Sign Up</button>
                     <br>
 
                     <p>Already have an account? <a href="login.php" class="text-primary">Login</a></p>
