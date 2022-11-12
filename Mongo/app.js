@@ -2,8 +2,9 @@ const express = require("express");
 const ejs = require("ejs");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
+const path = require('path'); 
 
-mongoose.connect("mongodb+srv://client.vmmnz8s.mongodb.net/myFirstDatabase", {
+mongoose.connect("mongodb+srv://client.vmmnz8s.mongodb.net/myNewDB", {
 useNewUrlParser: true,
 useUnifiedTopology: true
 });
@@ -13,17 +14,17 @@ email: String,
 query: String,
 };
 
-const Contact = mongoose.model("Contact", contactSchema);
+const Contact = mongoose.model("contacts", contactSchema);
 
 const app = express();
 
-app.set("view engine", "ejs");
+app.set('views', path.join(__dirname, 'views')); 
 
 app.use(bodyParser.urlencoded({
 	extended: true
 }));
 
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(path.join(__dirname, "public")));
 
 app.get("/contact", function(req, res){
 	res.render("contact");
