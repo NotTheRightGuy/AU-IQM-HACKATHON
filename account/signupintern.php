@@ -1,20 +1,93 @@
 <?php
 
 // Connect to the database
-// include('connection.php');
+include('connection.php');
 
-if ((isset($_POST["add"]))) {
+if ((isset($_POST["signup"]))) {
 
-    if ($_GET['client']) {
+    // build a function that validates data
+    function validateFormData($formData)
+    {
+        $formData = trim(stripslashes(htmlspecialchars($formData)));
+        return $formData;
+    }
 
-        // Client Database Connection
-        // Enter new Entry
+    // check to see if inputs are empty
+    // create variables with form data
+    // wrap the data with our function
+    if (!$_POST["first_name"]) {
+        $fnameError = "Please enter your First Name <br>";
+    } else {
+        $fname = validateFormData($_POST["first_name"]);
+    }
 
-    } else if ($_GET['intern']) {
+    if (!$_POST["last_name"]) {
+        $fnameError = "Please enter your Last Name <br>";
+    } else {
+        $lname = validateFormData($_POST["last_name"]);
+    }
 
-        // Intern Database Connection
-        // Enter new Entry
+    if (!$_POST["email"]) {
+        $emailError = "Please enter your email <br>";
+    } else {
+        $email = validateFormData($_POST["email"]);
+    }
 
+    if (!$_POST["pass_word"]) {
+        $passwordError = "Please enter your password <br>";
+    } else {
+        $pass_word = validateFormData($_POST["pass_word"]);
+        // $my_password = password_hash($pass_word, PASSWORD_DEFAULT);
+    }
+
+    if (!$_POST["flexRadioDefault"]) {
+        $genderError = "Please enter your gender <br>";
+    } else {
+        $gender = validateFormData($_POST["flexRadioDefault"]);
+        // $my_password = password_hash($pass_word, PASSWORD_DEFAULT);
+    }
+
+    if (!$_POST["dateOfBirth"]) {
+        $dobError = "Please enter your dob <br>";
+    } else {
+        $dob = validateFormData($_POST["dateOfBirth"]);
+        // $my_password = password_hash($pass_word, PASSWORD_DEFAULT);
+    }
+
+    if (!$_POST["university"]) {
+        $uniError = "Please enter your University <br>";
+    } else {
+        $uni = validateFormData($_POST["university"]);
+        // $my_password = password_hash($pass_word, PASSWORD_DEFAULT);
+    }
+
+    if (!$_POST["house"]) {
+        $addrError = "Please enter your address <br>";
+    } else {
+        $addr = validateFormData($_POST["house"]);
+        // $my_password = password_hash($pass_word, PASSWORD_DEFAULT);
+    }
+
+    if (!$_POST["country"]) {
+        $countryError = "Please enter your country <br>";
+    } else {
+        $country = validateFormData($_POST["country"]);
+        // $my_password = password_hash($pass_word, PASSWORD_DEFAULT);
+    }
+
+    if ( $fname && $lname && $email && $pass_word ) {
+        
+        $query = "INSERT INTO interns
+                    (fname, lname, email, pass_word, uni, addr, country)
+                    VALUES
+                    ('$fname', '$lname', '$email', '$pass_word', '$uni', '$addr', '$country')";
+    
+        if (mysqli_query($conn, $query)) {
+            echo "<div class='alert alert-success'>New record in database!</div>";
+        } else {
+            echo "Error: " . $query . "<br>" . mysqli_error($conn);
+        }
+        
     }
 
     mysqli_close($conn);
@@ -83,12 +156,12 @@ if ((isset($_POST["add"]))) {
                 <br>
                 <input type="text" placeholder="Email" name="email" id="email_id" class="form-control form-control-input">
                 <br>
-
+                
                 <label for="passkey" class="mt-4 fw-bold">Password</label><small class="text-danger">*</small>
                 <br>
                 <input type="password" placeholder="Password" name="pass_word" id="passkey" class="form-control form-control-input">
                 <br>
-
+                
                 <label for="gender" class="fw-bold">Gender</label><small class="text-danger">*</small>
                 <div class="form-check d-inline-flex ms-5">
                     <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
@@ -109,7 +182,7 @@ if ((isset($_POST["add"]))) {
                     </label>
                 </div>
                 <br>
-
+                
                 <label class="mt-4 fw-bold">Date Of Birth</label><small class="text-danger">*</small>
                 <br>
                 <!-- <label for="date" class="col-1 col-form-label">Date</label> -->
@@ -126,11 +199,16 @@ if ((isset($_POST["add"]))) {
                 <input type="date" name="dateOfBirth" id="dob" class="form-control  form-control-input">
                 <br>
 
+                <label for="uni" class="mt-4 fw-bold">University</label><small class="text-danger">*</small>
+                <br>
+                <input type="text" placeholder="e.g: Adani University" name="university" id="uni" class="form-control form-control-input">
+                <br>
+                
                 <label for="nation" class="mt-4 fw-bold">Country</label>
                 <small class="text-danger">*</small>
                 <br>
                 <input type="text" placeholder="Country" name="country" id="nation" class="form-control form-control-input">
-
+                
                 <label for="gradDate" class="mt-4 fw-bold">Expected Graduation Date</label>
                 <small class="text-danger">*</small>
                 <br>
@@ -159,7 +237,7 @@ if ((isset($_POST["add"]))) {
                 <input type="text" placeholder="e.g.: 382421" name="city" id="city" class="form-control form-control-input">
 
                 <br>
-                <a href="login.php" value="Sign Up" name="signup" class="mt-4 btn btn-primary mb-4">Sign Up</a>
+                <button type="submit" name="signup" class="mt-4 btn btn-primary mb-4">Sign Up</button>
                 <br>
 
                 <p>Already have an account? <a href="login.php" class="text-primary">Login</a></p>
