@@ -47,14 +47,11 @@ const router = createBrowserRouter([
         path: "/about",
         element: <About />,
     },
-<<<<<<< Updated upstream
 
-=======
     {
         path: "/CompanyD",
         element: <CompanyD />,
     }
->>>>>>> Stashed changes
 ]);
 
 function App() {
