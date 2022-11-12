@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap");
+
+.page-1 {
+    background-image: url(../assets/LandingPageBackGround.jpg);
+    background-size: 1800px;
+    height: 100vh;
+}
+
+nav {
+    padding-top: 8px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    height: 60px;
+    color: white;
+}
+
+.logo {
+    margin-left: 20px;
+    font-family: "lobster", cursive;
+    font-size: 40px;
+}
+
+.logo:hover {
+    cursor: pointer;
+}
+
+.nav-links {
+    font-size: 19px;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 8px;
+    margin: auto;
+    gap: 60px;
+}
+
+.nav-links a {
+    padding: 5px;
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.nav-links a:hover {
+    background-color: #d6e4e5;
+    border-radius: 12px;
+    padding-bottom: -12px;
+    color: black;
+    padding: 3px;
+}
+
+.nav-links button {
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.nav-links button:hover {
+    background-color: #fffbc1;
+    border-radius: 12px;
+    padding: 8px;
+    color: black;
+    padding: 3px;
+}
+
+.content {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+}
+
+.tagLine {
+    font-family: "PT Sans", sans-serif;
+    text-align: center;
+    width: 1000px;
+    font-size: 60px;
+    text-shadow: 6px 6px 0px rgba(0, 0, 0, 0.2);
+}
+.subLine {
+    margin-top: 30px;
+    font-family: "Popins", sans-serif;
+    font-size: 18px;
+    text-shadow: 6px 6px 0px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+.btnStart {
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    width: 220px;
+    background-color: #557153;
+    border-radius: 10px;
+    padding: 8px;
+    transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.btnStart:hover {
+    background-color: white;
+    color: black;
+    transform: translateY(-8px);
+}
