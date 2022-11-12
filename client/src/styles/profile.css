@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+
+.profileContainer {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.profileLeft {
+    text-align: center;
+    background-color: #d7e7f2;
+    background-image: linear-gradient(
+        135deg,
+        rgb(249, 242, 242) 0%,
+        #dcddf9 100%
+    );
+}
+
+.imageClass {
+    height: 450px;
+    width: 100%;
+}
+
+.imageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+
+.otherInformation {
+    text-align: center;
+}
+
+.profile-Name {
+    text-align: center;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 26px;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+.profileInfo {
+    margin-left: 15%;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 20px;
+    width: 70%;
+    font-weight: bold;
+}
+
+.profileRight {
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profileRight:nth-child(n) {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.generalOverView {
+    border-radius: 10px;
+    margin: 10px 0 10px 0;
+    text-align: center;
+    background-color: white;
+    padding: 30px;
+    width: 600px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.profileRight p {
+    font-family: "PT Sans", sans-serif;
+    font-size: 32px;
+}
+
+.skills {
+    border-radius: 10px;
+
+    margin: 10px 0 10px 0;
+    text-align: center;
+    background-color: white;
+    padding: 30px;
+    width: 600px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.workExperience {
+    border-radius: 10px;
+
+    margin: 10px 0 10px 0;
+    text-align: center;
+    background-color: white;
+    padding: 30px;
+    width: 600px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.education {
+    border-radius: 10px;
+    margin: 10px 0 10px 0;
+    text-align: center;
+    background-color: white;
+    padding: 30px;
+    width: 600px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.editProfile {
+}
