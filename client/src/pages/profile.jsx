@@ -1,3 +1,5 @@
+// This is the user profile page for interns which shows their name, about me, detailed infor, skills, work experience, education, and a button to edit their profile.
+
 import React, { Component } from "react";
 import Nav from "../components/nav";
 import "../styles/profile.css";

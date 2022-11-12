@@ -1,3 +1,5 @@
+// This is the user profile page for clients which shows their company name, self me, detailed info about company, skills required to apply, work experience requirenment, Stipend Range and a button to edit their profile.
+
 import React, { Component } from "react";
 import Nav from "../components/nav";
 import "../styles/profile.css";
