@@ -7,7 +7,7 @@ import InternSignIn from "./pages/internSignin";
 import Company from "./pages/company";
 import InternRegister from "./pages/internRegister";
 import About from "./pages/About";
-import CompanyD from "./pages/companyD";
+import Companydetails from "./pages/Companydetails";
 
 
 import "./App.css";
@@ -49,8 +49,8 @@ const router = createBrowserRouter([
     },
 
     {
-        path: "/CompanyD",
-        element: <CompanyD />,
+        path: "/Companydetails",
+        element: <Companydetails />,
     }
 ]);
 
