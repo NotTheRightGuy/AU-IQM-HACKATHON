@@ -1,17 +1,22 @@
-import { useState } from "react";
+import LandingPage from "./pages/landingpage";
+import Sign from "./pages/signin";
+
 import "./App.css";
+import { createBrowserRouter, RouterProvider, Route } from "react-router-dom";
+
+const router = createBrowserRouter([
+    {
+        path: "/",
+        element: <LandingPage />,
+    },
+    {
+        path: "/sign",
+        element: <Sign />,
+    },
+]);
 
 function App() {
-    const [count, setCount] = useState(0);
-
-    return (
-        <div className="App">
-            <h2 className="text-3xl">
-                But this is it; the deed is done. Silence drowns the sound.
-                Before I Leaped, I should have seen the view from halfway down.
-            </h2>
-        </div>
-    );
+    return <RouterProvider router={router} />;
 }
 
 export default App;
