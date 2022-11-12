@@ -10,6 +10,9 @@ class Nav extends Component {
 
                 <div className="navBarLinks">
                     <a href="http://127.0.0.1:5500/client/src/pages/recommendation.html">Browse</a>
+                </div>
+
+                <div className="navBarLinks">
                     <a href="http://127.0.0.1:5500/client/src/pages/joboffer.html">Post</a>
                 </div>
 
