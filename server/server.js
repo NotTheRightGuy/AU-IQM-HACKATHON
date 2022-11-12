@@ -1,9 +1,15 @@
 const express = require("express");
 const app = express();
-const PORT = 1410;
+const PORT = 5000;
+const cors = require("cors");
+const { json } = require("express");
+app.use(cors());
+app.use(express.json());
 
-app.get("/api/login", (req, res) => {
-    res.send("You are on the login page");
+app.post("/api/intern/register", (req, res) => {
+    // res.send("Intern Registered");
+    console.log(req.body);
+    res.json({ status: "ok" });
 });
 
 app.listen(`${PORT}`, () => {
