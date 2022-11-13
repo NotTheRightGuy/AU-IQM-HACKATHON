@@ -1,25 +1,51 @@
-[{
-    "comp_name": "Google",
-    "comp_address": "Amphitheatre Parkway, Mountain View, California",
-    "comp_country": "USA",
-    "comp_mail": "support-in@google.com",
-    "comp_phone": "123987456",
-    "comp_website": "www.google.com",
-    "comp_password": "googlepassword"
-},
-{
-    "comp_name": "Microsoft",
-    "comp_address": "Redmond, Washington",
-    "comp_mail": "support-microsoft@outlook.com",
-    "comp_phone": "987123654",
-    "comp_website": "www.microsoft.com",
-    "comp_password": "microsoftpassword"
-},
-{
-    "comp_name": "Adani",
-    "comp_address": "Adani Corporate House, Shantigram, Ahmedabad",
-    "comp_mail": "xyz@adani.com",
-    "comp_phone": "7926565555",
-    "comp_website": "www.adani.com",
-    "comp_password": "adanipassword"
-}]
+[
+    {
+        "comp_name": "Google",
+        "comp_address": "Amphitheatre Parkway, Mountain View, California",
+        "comp_country": "USA",
+        "comp_mail": "support-in@google.com",
+        "comp_phone": "123987456",
+        "comp_website": "www.google.com",
+        "comp_password": "googlepassword"
+    },
+    {
+        "comp_name": "Microsoft",
+        "comp_address": "Redmond, Washington",
+        "comp_mail": "support-microsoft@outlook.com",
+        "comp_phone": "987123654",
+        "comp_website": "www.microsoft.com",
+        "comp_password": "microsoftpassword"
+    },
+    {
+        "comp_name": "Adani",
+        "comp_address": "Adani Corporate House, Shantigram, Ahmedabad",
+        "comp_mail": "xyz@adani.com",
+        "comp_phone": "7926565555",
+        "comp_website": "www.adani.com",
+        "comp_password": "adanipassword"
+    },
+    {
+        "comp_name": "BHEL",
+        "comp_address": "New Delhi, India",
+        "comp_mail": "delhi-bhel@gmail.com",
+        "comp_phone": "1223334444",
+        "comp_website": "www.bhel.com",
+        "comp_password": "bhelpassword"
+    },
+    {
+        "comp_name": "Larsen and Toubro",
+        "comp_address": "Manappakam, Chennai, Tamil Nadu",
+        "comp_mail": "lasern-turbo@gmail.com",
+        "comp_phone": "4444333221",
+        "comp_website": "www.laserntoubro.com",
+        "comp_password": "landt"
+    },
+    {
+        "comp_name": "TCS",
+        "comp_address": "Mumbai, Maharashtra",
+        "comp_mail": "tcs@gmail.com",
+        "comp_phone": "4332221111",
+        "comp_website": "www.tcs.com",
+        "comp_password": "tcspassword"
+    }
+]

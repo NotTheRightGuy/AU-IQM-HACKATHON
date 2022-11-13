@@ -9,7 +9,7 @@
         "university": "University of Toronto",
         "address": "27 King's College Circle",
         "country": "Canada",
-        "skills": "['HTML', 'CSS', 'JavaScript']"
+        "skills": "['Electrical Engineering Diploma']"
     },
     {
         "name": "Jane Doe",
@@ -21,7 +21,7 @@
         "university": "Harvard University",
         "address": "Cambridge, MA, United States",
         "country": "USA",
-        "skills": "['PHP', 'Python', 'Java']"
+        "skills": "['Mechanical Engineering Degree']"
     },
     {
         "name": "Dev Sanghvi",

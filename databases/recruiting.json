@@ -1,0 +1,22 @@
+[
+    {
+        "position": "Intern Mechanical Engineer",
+        "skills": "Basic Knowledge",
+        "stipend": "18,000"
+    },
+    {
+        "position": "Intern Electrical Engineer",
+        "skills": "Basic Knowledge",
+        "stipend": "15,000"
+    },
+    {
+        "position": "Intern Web Developer",
+        "skills": "['HTML', 'CSS', 'JavaScript']",
+        "stipend": "20,000"
+    },
+    {
+        "position": "Intern Data Science",
+        "skills": "['Python', 'R', 'SQL']",
+        "stipend": "25,000"
+    }
+]
