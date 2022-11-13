@@ -18,9 +18,9 @@ function JobCards({ data }) {
                 <p className="fw-bold ps-5">{position}</p>
                 <p className="fw-bold ps-5">Skills Preferred:</p>
                 <ul className="d-inline-block ms-5">
-                    <li>{one}</li>
-                    <li>{two}</li>
-                    <li>{three}</li>
+                    <li>Skills 1</li>
+                    <li>Skills 2</li>
+                    <li>Skills 3</li>
                 </ul>
                 <p className="fw-bold ps-5">{stipend}</p>
             </div>
