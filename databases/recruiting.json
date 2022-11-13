@@ -2,13 +2,13 @@
     {
         "position": "Intern Mechanical Engineer",
         "company": "L & T",
-        "skills": "Basic Knowledge",
+        "skills": "['Basic Knowledge','Political Science','Environmental Science']",
         "stipend": "18,000"
     },
     {
         "position": "Intern Electrical Engineer",
         "company": "BHEL",
-        "skills": "Basic Knowledge",
+        "skills": "['Basic Knowledge','Political Science','Environmental Science']",
         "stipend": "15,000"
     },
     {
