@@ -10,13 +10,12 @@ import About from "./pages/About";
 import Companydetails from "./pages/Companydetails";
 import ClientSignIn from "./pages/clientSignin.jsx";
 import ClientRegister from "./pages/clientRegister";
-import Reviews from "./pages/reviews";
+import Recommendation from "./pages/recommendation";
 
 import InternProfileCreation from "./pages/internProfileCreation";
 
 import InterData from "./pages/reviews";
 import FailedLogin from "./pages/failed-login";
-
 
 import "./App.css";
 import { createBrowserRouter, RouterProvider, Route } from "react-router-dom";
@@ -74,11 +73,15 @@ const router = createBrowserRouter([
     },
     {
         path: "/interData",
-        element: <InterData />
+        element: <InterData />,
     },
     {
         path: "/failed-login",
-        element: <FailedLogin />
+        element: <FailedLogin />,
+    },
+    {
+        path: "/recommendation",
+        element: <Recommendation />,
     },
 ]);
 
