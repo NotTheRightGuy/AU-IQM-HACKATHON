@@ -15,6 +15,7 @@ import Reviews from "./pages/reviews";
 import InternProfileCreation from "./pages/internProfileCreation";
 
 import InterData from "./pages/reviews";
+import FailedLogin from "./pages/failed-login";
 
 
 import "./App.css";
@@ -74,8 +75,11 @@ const router = createBrowserRouter([
     {
         path: "/interData",
         element: <InterData />
-    }
-
+    },
+    {
+        path: "/failed-login",
+        element: <FailedLogin />
+    },
 ]);
 
 function App() {
