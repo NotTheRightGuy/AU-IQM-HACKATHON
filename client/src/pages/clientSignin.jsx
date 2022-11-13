@@ -8,7 +8,7 @@ function InternSignIn() {
     const reDirect = (e) => {
         console.log("Clicked");
         e.preventDefault();
-        window.location.href = "/profile";
+        window.location.href = "/Companydetails";
     };
 
     return (
