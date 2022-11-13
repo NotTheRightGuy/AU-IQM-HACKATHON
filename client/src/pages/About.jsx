@@ -13,7 +13,7 @@ export default class LandingPage extends Component {
             <section className="page-1">
                 <nav>
                     <div className="logo">
-                        <a href="/">DevBase</a>
+                        <a href="/">InCo</a>
                     </div>
                     <div className="nav-links">
                         <a href="home">Home</a>

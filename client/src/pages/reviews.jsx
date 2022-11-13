@@ -24,7 +24,7 @@ export default class LandingPage extends Component {
                             href="http://localhost:5173/"
                             className="navbar-brand ms-5"
                         >
-                            DevBase
+                            InCo
                         </a>
                         <div className="ms-auto me-4">
                             <div className="float-end d-flex ">
@@ -34,7 +34,6 @@ export default class LandingPage extends Component {
                                 >
                                     Account Settings
                                 </a>
-
                             </div>
                         </div>
                     </div>
