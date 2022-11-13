@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "../styles/landingPage.css";
+import data from "../../../databases/recruiting.json";
 
 // The Homepage JSX
 // The button in this page redirect to the sign up/sign in page depending on the user's status.
@@ -25,7 +26,7 @@ export default class LandingPage extends Component {
                                 window.location.href = "/sign";
                             }}
                         >
-                            Start Your Journey <>&#8594;</>
+                            Start Your Journey<>&#8594;</>
                         </button>
                     </div>
                 </nav>

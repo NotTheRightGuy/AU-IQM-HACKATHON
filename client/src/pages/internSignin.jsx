@@ -7,18 +7,23 @@ import clientData from "../../../databases/interns.json";
 function InternSignIn() {
     const [mail, setMail] = useState("");
     const [password, setPassword] = useState("");
+    const [flag, setFlag] = useState(false);
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        clientData.map((item) => {
-            console.log(mail, password, item.email, item.pass_word);
-            if (item.email == mail && item.pass_word === password) {
-                window.location.href = "/Companydetails";
-                console.log("Success");
-            } else {
-                console.log("Wrong Cred");
+        clientData.map((client) => {
+            if (!flag) {
+                if (client.email === mail && client.pass_word === password) {
+                    console.log(client);
+                    setFlag(true);
+                }
             }
         });
+        if (flag) {
+            window.location.href = "/Companydetails";
+        } else {
+            window.location.href = "/failed-login";
+        }
     };
     return (
         <section className="signContainer">
