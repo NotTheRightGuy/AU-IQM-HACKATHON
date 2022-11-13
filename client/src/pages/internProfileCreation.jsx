@@ -10,7 +10,12 @@ function InternProfileCreation() {
                 <br />
                 <br />
                 <form action="">
-                    <label htmlFor="skills" className="fw-bold d-flex mx-5 float-start">Skills</label>
+                    <label
+                        htmlFor="skills"
+                        className="fw-bold d-flex mx-5 float-start"
+                    >
+                        Skills
+                    </label>
                     <input
                         className="form-control form-control-input"
                         type="text"
@@ -18,18 +23,33 @@ function InternProfileCreation() {
                         id="skills"
                     />
                     <br />
-                    <label htmlFor="education" className="fw-bold ps-5">Education</label>
-                    <input className="form-control form-control-input" type="text" placeholder="Education" id="education"/>
+                    <label htmlFor="education" className="fw-bold ps-5">
+                        Education
+                    </label>
+                    <input
+                        className="form-control form-control-input"
+                        type="text"
+                        placeholder="Education"
+                        id="education"
+                    />
                     <br />
-                    <label className="fw-bold ps-5" htmlFor="workexp">Work Experience</label>
-                    <input className="form-control form-control-input" type="text" placeholder="Work Experience" />
+                    <label className="fw-bold ps-5" htmlFor="workexp">
+                        Work Experience
+                    </label>
+                    <input
+                        className="form-control form-control-input"
+                        type="text"
+                        placeholder="Work Experience"
+                    />
                     <button
                         className="d-flex btn btn-outline-success btn-md btn-block text-align-center mx-auto mt-4"
                         type="submit"
                         onClick={() => {
                             window.open("/intern/profile", "_self");
                         }}
-                    >Submit Profile</button>
+                    >
+                        Submit Profile
+                    </button>
                 </form>
             </div>
         </div>
