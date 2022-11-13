@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Create Job Offer</title>
+    <title>Job Recommendations</title>
     <link rel="stylesheet" href="header.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -19,43 +19,43 @@
 
 <body>
 
-    <div class="navbar fixed-top navbar-expand-lg bg-dark navbar-dark">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-collapse">
-            <span class="visually-hidden">Toggle Navigation</span>
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <a href="#" class="navbar-brand ms-5">Name</a>
+    <nav>
+        <div class="navbar fixed-top navbar-expand-lg bg-dark navbar-dark">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-collapse">
+                <span class="visually-hidden">Toggle Navigation</span>
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a href="http://localhost:5173/" class="navbar-brand ms-5">DevBase</a>
 
-        <div class="ms-auto me-4">
-            <div class="float-end d-flex ">
-                <a class="order-button btn btn-outline-light text-center fs-6" href="#">Account Settings</a>
+            <div class="ms-auto me-4">
+                <div class="float-end d-flex ">
+                    <a class="order-button btn btn-outline-light text-center fs-6" href="http://localhost:5173/profile">Account Settings</a>
+                </div>
             </div>
         </div>
-    </div>
-
+    </nav>
     <br>
     <br>
 
     <div class="container-fluid mt-5">
 
         <div class="border border-secondary shadow w-75 mx-auto">
-            <p class="lead ms-2 mt-2 fw-bold fs-2 ps-2">Post Vacancies</p>
+            <p class="lead ms-2 mt-2 fw-bold fs-2 ps-2">Company Name</p>
             <hr class="dropdown-divider mx-auto" style="width: 90% ;">
-            <form action="">
-                <label for="jobTitle" class="fw-bold ps-5">Job Title</label>
-                <input type="text" id="jobTitle"
-                    class="w-25 form-control form-control-input border-dark mt-2 ms-5 mb-4">
-                <label for="skills" class="fw-bold ps-5">Skills Preferred:</label>
-                <textarea class="w-25 form-control form-control-input border-dark mt-2 ms-5 mb-4"
-                    id="skills"></textarea>
-                <label id="stipend" class="fw-bold ps-5">Stipend Offered</label>
-                <input type="text" id="stipend" class="w-25 form-control form-control-input border-dark mt-2 ms-5 mb-4">
-            </form>
+            <p class="fw-bold ps-5">Job Title</p>
+            <p class="fw-bold ps-5">Skills Preferred:</p>
+            <ul class="d-inline-block ms-5">
+                <li>Skill 1</li>
+                <li>Skill 2</li>
+                <li>Skill 3</li>
+                <li>Skill 4</li>
+                <li>Skill 5</li>
+            </ul>
+            <p class="fw-bold ps-5">Stipend Offered</p>
         </div>
-        <div>
-            <button class="d-flex mx-auto mt-4 btn btn-outline-success shadow-lg">Post Vacancy</button>
-        </div>
+
     </div>
+
 
     <!-- Load the CDN first -->
     <script src="//code.jquery.com/jquery-3.6.1.min.js"></script>

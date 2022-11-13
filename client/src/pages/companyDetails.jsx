@@ -1,4 +1,4 @@
-// This is the user profile page for interns which shows their name, about me, detailed infor, skills, work experience, education, and a button to edit their profile.
+// This is the user profile page for clients which shows their company name, self me, detailed info about company, skills required to apply, work experience requirenment, Stipend Range and a button to edit their profile.
 
 import React, { Component } from "react";
 import Nav from "../components/nav";
@@ -29,38 +29,29 @@ class Profile extends Component {
                         </div>
                         <div className="profileRight">
                             <div className="generalOverView">
-                                <p>Know About Me.</p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing
-                                elit. Consequatur, eligendi possimus suscipit
-                                necessitatibus, doloremque illo impedit perferendis
-                                dignissimos quam dolor atque, animi ipsa accusamus
-                                corrupti dolorum earum. Inventore quos
-                                necessitatibus nulla ab illo tempore optio ex
-                                obcaecati. Obcaecati fugiat excepturi rem doloribus
-                                accusantium ex fuga veritatis? Ex nam hic itaque
-                                voluptatibus aperiam dicta nostrum possimus illum,
-                                et minus accusantium cumque nesciunt debitis eaque,
-                                non sed animi distinctio labore quaerat dolores
-                                voluptatum? Nihil, itaque voluptatem minus numquam,
-                                dolor architecto consequatur reiciendis libero
-                                assumenda necessitatibus adipisci esse qui. Possimus
-                                quam maiores ipsa perferendis ratione, earum
-                                mollitia? Similique nulla, tempora eaque eius quasi
-                                Suscipit fugit molestiae deserunt nobis non
-                                voluptate.
+                                <p>Company Details.</p>
+                                Hello, This is Elon Musk. I'm the CEO of Tesla and
+                                SpaceX. I'm also the founder of Neuralink and
+                                OpenAI. I'm also the founder of Neuralink and
+                                OpenAI. I'm also the founder of Neuralink and
+                                OpenAI. I'm also the founder of Neuralink and
+                                Twitter. I love to code and I'm a huge fan of
+                                this website. I have followed the following coders on Github and suggested them to follow me back.
+                                acquire OpenAI from me. I also suggest you to follow them on GITHUB.
                             </div>
                             <div className="skills">
-                                <p>Skills</p>
-                                Lorem, ipsum dolor. Lorem, ipsum dolor. Lorem, ipsum
-                                dolor.
+                                <p>Skills Requirenments</p>
+                                Wingardium Leviosa, Lumos
                             </div>
                             <div className="workExperience">
-                                <p>Work Experience</p>
-                                Lunga Punga
+                                <p>Experience Required</p>
+                                5 years of experience in Web Development
+                                2 years of experience in Machine Learning
+                                10 years of experience is being a failure
                             </div>
                             <div className="education">
-                                <p>Education</p>
-                                Chinga Hunga
+                                <p>Stipend Ranges</p>
+                                From your maximum possible net worth to our Github follower's net worth.
                             </div>
                         </div>
                         <button className="editProfile">

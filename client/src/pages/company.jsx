@@ -1,64 +1,55 @@
-// This is the user profile page for clients which shows their company name, self me, detailed info about company, skills required to apply, work experience requirenment, Stipend Range and a button to edit their profile.
-
 import React, { Component } from "react";
-import Nav from "../components/nav";
-import "../styles/profile.css";
+import "../styles/landingPage.css";
 
-class Profile extends Component {
+// The Homepage JSX
+// The button in this page redirect to the sign up/sign in page depending on the user's status.
+// The button is a link to the sign up/sign in page.
+// The button is a link to the profile page.
+// 
+
+export default class LandingPage extends Component {
     render() {
         return (
-            <>
-                <Nav />
-                <div className="profileContainer">
-                    <div className="profileLeft">
-                        <div className="imageContainer">
-                            <img
-                                className="imageClass"
-                                src="https://st3.depositphotos.com/6672868/13701/v/600/depositphotos_137014128-stock-illustration-user-profile-icon.jpg"
-                            />
-                        </div>
-                        <div className="otherInformation">
-                            <div className="profile-Name">Delsion J. Rouge</div>
-                            <div className="profileInfo">
-                                Hello, I'm a passionate Web Developer Trying my
-                                best to survive in this crazy world
-                            </div>
-                        </div>
+            <section className="page-1">
+                <nav>
+                    <div className="logo"><a href='#'>DevBase</a></div>
+                    <div className="nav-links">
+                        <a href="home">Home</a>
+                        <a href="about">About</a>
+                        <a href="Company">Company</a>
+                        <a href="Reviews">Reviews</a>
+                        <button
+                            className="start"
+                            onClick={() => {
+                                window.location.href = "/sign";
+                            }}
+                        >
+                            Start Your Journey <>&#8594;</>
+                        </button>
                     </div>
-                    <div className="profileRight">
-                        <div className="generalOverView">
-                            <p>Company Details.</p>
-                            Hello, This is Elon Musk. I'm the CEO of Tesla and
-                            SpaceX. I'm also the founder of Neuralink and 
-                            OpenAI. I'm also the founder of Neuralink and
-                            OpenAI. I'm also the founder of Neuralink and
-                            OpenAI. I'm also the founder of Neuralink and
-                            Twitter. I love to code and I'm a huge fan of
-                            this website. I have followed the following coders on Github and suggested them to follow me back.
-                            acquire OpenAI from me. I also suggest you to follow them on GITHUB.
-                        </div>
-                        <div className="skills">
-                            <p>Skills Requirenments</p>
-                            Wingardium Leviosa, Lumos
-                        </div>
-                        <div className="workExperience">
-                            <p>Experience Required</p>
-                            5 years of experience in Web Development
-                            2 years of experience in Machine Learning
-                            10 years of experience is being a failure
-                        </div>
-                        <div className="education">
-                            <p>Stipend Ranges</p>
-                            From your maximum possible net worth to our Github follower's net worth.
-                        </div>
+                </nav>
+                <div className="content">
+                    <div className="tagLine">
+                        The company which have partenered with us
                     </div>
-                    <button className="editProfile">
-                        <img src="https://img.icons8.com/material-rounded/48/null/edit--v1.png" />
+                    <div className="subLine">
+                        Companies like SpaceX, Google, Tesla, OpenAI, Twitter, AlienCo., Facebook, Amazon, Microsoft, Apple, IBM, Oracle, and many more.
+                    </div>
+
+                    <button
+                        className="btnStart"
+                        onClick={() => {
+                            window.location.href = "/sign";
+                        }}
+                    >
+                        Start your Journey
                     </button>
+
                 </div>
-            </>
+
+
+            </section>
+
         );
     }
 }
-
-export default Profile;

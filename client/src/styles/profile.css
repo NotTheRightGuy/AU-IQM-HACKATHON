@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
 
 .profileContainer {
+    margin-top: 100px;
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -12,7 +13,7 @@
     background-image: linear-gradient(
         135deg,
         rgb(249, 242, 242) 0%,
-        #dcddf9 100%
+        #ddd 100%
     );
 }
 

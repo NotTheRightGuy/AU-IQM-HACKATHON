@@ -7,6 +7,9 @@ import InternSignIn from "./pages/internSignin";
 import Company from "./pages/company";
 import InternRegister from "./pages/internRegister";
 import About from "./pages/About";
+import Companydetails from "./pages/Companydetails";
+import clientSignin from "./pages/clientSignin";
+import clientRegister from "./pages/clientRegister";
 
 
 import "./App.css";
@@ -47,6 +50,18 @@ const router = createBrowserRouter([
         element: <About />,
     },
 
+    {
+        path: "/Companydetails",
+        element: <Companydetails />,
+    },
+    {
+        path: "/clientSignin",
+        element: <ClientSignin />,
+    },
+    {
+        path: "/clientRegister",
+        element: <ClientRegister />,
+    },
 ]);
 
 function App() {
