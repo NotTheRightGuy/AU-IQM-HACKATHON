@@ -6,6 +6,7 @@ function InternProfileCreation() {
     return (
         <div className="profileCreationContainer container-fluid bg-light">
             <div className="profileWindow">
+                <div className="profileCreationHeader pb-2 mt-4 mb-2 border-bottom mx-auto w-75 color-dark bg-light">Update your Profile</div>
                 <br />
                 <br />
                 <form action="">
