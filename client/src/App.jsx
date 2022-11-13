@@ -76,7 +76,7 @@ const router = createBrowserRouter([
         path: "/profile-creation",
         element: <InternProfileCreation />,
     },
-
+    {
         path: "/interData",
         element: <InterData />
     }
