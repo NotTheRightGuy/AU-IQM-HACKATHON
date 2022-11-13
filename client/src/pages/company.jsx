@@ -12,13 +12,9 @@ export default class LandingPage extends Component {
         return (
             <section className="page-1">
                 <nav>
-<<<<<<< Updated upstream
-                    <div className="logo"><a href='#'>InCo</a></div>
-=======
                     <div className="logo">
                         <a href="#">DevBase</a>
                     </div>
->>>>>>> Stashed changes
                     <div className="nav-links">
                         <a href="home">Home</a>
                         <a href="about">About</a>
