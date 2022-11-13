@@ -3,32 +3,42 @@ import { useState } from "react";
 import "../styles/internSignin.css";
 import "bootstrap/dist/css/bootstrap.css";
 
-function InternSignIn() {
+function InternRegister() {
     const [mail, setMail] = useState("");
     const [password, setPassword] = useState("");
+    const [name, setName] = useState("");
 
-    async function handleSubmit(event) {
+    async function handleRegister(event) {
         event.preventDefault();
         console.log("Registering");
-        const response = await fetch("http://localhost:5000/api/intern/login", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-            },
-            body: JSON.stringify({
-                mail: mail,
-                password: password,
-                name: name,
-            }),
-        });
+        const response = await fetch(
+            "http://localhost:3000/api/intern/new-user",
+            {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({
+                    name: name,
+                    mail: mail,
+                    password: password,
+                }),
+            }
+        );
         const data = await response.json();
     }
-
     return (
         <section className="signContainer">
             <div className="signLeftWindow">
-                <div className="logIn">Log In</div>
-                <form onSubmit={handleSubmit}>
+                <div className="logIn">Register</div>
+                <form onSubmit={handleRegister}>
+                    <input
+                        onChange={(e) => setName(e.target.value)}
+                        value={name}
+                        type="text"
+                        name="username"
+                        placeholder="Name"
+                    />
                     <input
                         onChange={(e) => setMail(e.target.value)}
                         value={mail}
@@ -46,10 +56,10 @@ function InternSignIn() {
                     <button type="submit"
 
                         onClick={() => {
-                            window.location.href = "/profile";
+                            window.location.href = "/internSignIn";
                         }}
                     >
-                        Sign In</button>
+                        Continue</button>
                 </form>
             </div>
             <div className="signRightWindow">
@@ -62,4 +72,4 @@ function InternSignIn() {
     );
 }
 
-export default InternSignIn;
+export default InternRegister;

@@ -10,17 +10,18 @@ function InternRegister() {
 
     async function handleRegister(event) {
         event.preventDefault();
+        console.log("Registering");
         const response = await fetch(
-            "http://localhost:5000/api/intern/register",
+            "http://localhost:3000/api/intern/new-user",
             {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
                 },
                 body: JSON.stringify({
+                    name: name,
                     mail: mail,
                     password: password,
-                    name: name,
                 }),
             }
         );
@@ -52,7 +53,13 @@ function InternRegister() {
                         name="password"
                         placeholder="Password"
                     />
-                    <button type="submit">Sign Up</button>
+                    <button type="submit"
+
+                        onClick={() => {
+                            window.location.href = "/interData";
+                        }}
+                    >
+                        Sign Up</button>
                 </form>
             </div>
             <div className="signRightWindow">

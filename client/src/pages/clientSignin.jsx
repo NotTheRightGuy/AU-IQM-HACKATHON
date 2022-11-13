@@ -9,19 +9,6 @@ function InternSignIn() {
 
     async function handleSubmit(event) {
         event.preventDefault();
-        console.log("Registering");
-        const response = await fetch("http://localhost:5000/api/intern/login", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-            },
-            body: JSON.stringify({
-                mail: mail,
-                password: password,
-                name: name,
-            }),
-        });
-        const data = await response.json();
     }
 
     return (
@@ -46,7 +33,7 @@ function InternSignIn() {
                     <button type="submit"
 
                         onClick={() => {
-                            window.location.href = "/profile";
+                            window.location.href = "/companyDetails";
                         }}
                     >
                         Sign In</button>
@@ -63,3 +50,4 @@ function InternSignIn() {
 }
 
 export default InternSignIn;
+

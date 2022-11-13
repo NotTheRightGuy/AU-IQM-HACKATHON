@@ -6,15 +6,11 @@ class Nav extends Component {
     render() {
         return (
             <nav className="navbar navbar-expang-lg fixed-top navbarProfile">
-                <div className="logo"><a href="/">DevBase</a></div>
+                <div className="logo"><a href="/">InCo</a></div>
                 <div className="wrapper"></div>
 
                 <div className="navBarLinks">
                     <a href="http://127.0.0.1:5500/client/src/pages/recommendation.html">Browse</a>
-                </div>
-
-                <div className="navBarLinks">
-                    <a href="http://127.0.0.1:5500/client/src/pages/joboffer.html">Post</a>
                 </div>
 
             </nav>

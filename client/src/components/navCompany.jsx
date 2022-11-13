@@ -1,11 +1,12 @@
 import React, { Component } from "react";
 import "../styles/nav.css";
+import "../../bootstrap-5.2.2-dist/css/bootstrap.min.css";
 
 class Nav extends Component {
     render() {
         return (
-            <nav className="navbarProfile">
-                <div className="logo"><a href="/">DevBase</a></div>
+            <nav className="navbar navbar-expang-lg fixed-top navbarProfile">
+                <div className="logo"><a href="/">InCo</a></div>
                 <div className="wrapper"></div>
 
                 <div className="navBarLinks">
