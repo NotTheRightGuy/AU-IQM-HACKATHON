@@ -10,6 +10,7 @@ function InternRegister() {
 
     async function handleRegister(event) {
         event.preventDefault();
+        console.log("Registering");
         const response = await fetch(
             "http://localhost:3000/api/intern/new-user",
             {
@@ -52,7 +53,13 @@ function InternRegister() {
                         name="password"
                         placeholder="Password"
                     />
-                    <button type="submit">Sign Up</button>
+                    <button type="submit"
+
+                        onClick={() => {
+                            window.location.href = "/internSignIn";
+                        }}
+                    >
+                        Sign Up</button>
                 </form>
             </div>
             <div className="signRightWindow">

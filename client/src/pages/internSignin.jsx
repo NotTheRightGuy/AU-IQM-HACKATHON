@@ -9,8 +9,9 @@ function InternSignIn() {
 
     async function handleSubmit(event) {
         event.preventDefault();
-        const response = await fetch("http://localhost:3000/api/intern/users", {
-            method: "GET",
+        console.log("Registering");
+        const response = await fetch("http://localhost:5000/api/intern/login", {
+            method: "POST",
             headers: {
                 "Content-Type": "application/json",
             },
@@ -42,7 +43,13 @@ function InternSignIn() {
                         name="password"
                         placeholder="Password"
                     />
-                    <button type="submit">Sign In</button>
+                    <button type="submit"
+
+                        onClick={() => {
+                            window.location.href = "/profile";
+                        }}
+                    >
+                        Sign In</button>
                 </form>
             </div>
             <div className="signRightWindow">
