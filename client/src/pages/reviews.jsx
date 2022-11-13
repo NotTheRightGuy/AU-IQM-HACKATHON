@@ -19,6 +19,7 @@ export default class LandingPage extends Component {
                             </span>
                             <span className="navbar-toggler-icon"></span>
                         </button>
+
                         <a
                             href="http://localhost:5173/"
                             className="navbar-brand ms-5"
@@ -33,6 +34,7 @@ export default class LandingPage extends Component {
                                 >
                                     Account Settings
                                 </a>
+
                             </div>
                         </div>
                     </div>

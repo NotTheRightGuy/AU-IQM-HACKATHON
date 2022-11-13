@@ -1,36 +1,74 @@
-{
-    "name": "John Doe",
-    "email": "john@doe.com",
-    "pass_word": "johndoepassword",
-    "gender": "male",
-    "dateofbirth": "01/01/1991",
-    "m_no": "1234567890",
-    "university": "University of Toronto",
-    "address": "27 King's College Circle",
-    "country": "Canada",
-    "skills": "['HTML', 'CSS', 'JavaScript']"
-},
-{
-    "name": "Jane Doe",
-    "email": "jane@doe.com",
-    "pass_word": "janedoe",
-    "gender": "female",
-    "dateofbirth": "01/10/1992",
-    "m_no": "987654321",
-    "university": "Harvard University",
-    "address": "Cambridge, MA, United States",
-    "country": "USA",
-    "skills": "['PHP', 'Python', 'Java']"
-},
-{
-    "name": "Jane Doe",
-    "email": "jane@doe.com",
-    "pass_word": "janedoe",
-    "gender": "female",
-    "dateofbirth": "01/10/1992",
-    "m_no": "987654321",
-    "university": "Harvard University",
-    "address": "Cambridge, MA, United States",
-    "country": "USA",
-    "skills": "['PHP', 'Python', 'Java']"
-},
+[
+    {
+        "name": "John Doe",
+        "email": "john@doe.com",
+        "pass_word": "johndoepassword",
+        "gender": "male",
+        "dateofbirth": "01/01/1991",
+        "m_no": "1234567890",
+        "university": "University of Toronto",
+        "address": "27 King's College Circle",
+        "country": "Canada",
+        "skills": "['Electrical Engineering Diploma']"
+    },
+    {
+        "name": "Jane Doe",
+        "email": "jane@doe.com",
+        "pass_word": "janedoe",
+        "gender": "female",
+        "dateofbirth": "01/10/1992",
+        "m_no": "987654321",
+        "university": "Harvard University",
+        "address": "Cambridge, MA, United States",
+        "country": "USA",
+        "skills": "['Mechanical Engineering Degree']"
+    },
+    {
+        "name": "Dev Sanghvi",
+        "email": "dev@sanghvi.com",
+        "pass_word": "devsanghvi",
+        "gender": "male",
+        "dateofbirth": "04/08/2004",
+        "m_no": "123123123",
+        "university": "Adani University",
+        "address": "Adani University, Shantigram, Ahmedabad",
+        "country": "India",
+        "skills": "['Python', 'C++', 'Go', 'ReactJS']"
+    },
+    {
+        "name": "Janmejay Chatterjee",
+        "email": "janmejay@chatterjee.com",
+        "pass_word": "janmejay",
+        "gender": "male",
+        "dateofbirth": "19/12/2003",
+        "m_no": "456456456",
+        "university": "Adani University",
+        "address": "Adani University, Shantigram, Ahmedabad",
+        "country": "India",
+        "skills": "['ReactJS', 'HTML', 'CSS', 'MySQL']"
+    },
+    {
+        "name": "Harshita ",
+        "email": "harshita@email.com",
+        "pass_word": "harshita",
+        "gender": "female",
+        "dateofbirth": "21/11/2003",
+        "m_no": "789789789",
+        "university": "Adani University",
+        "address": "Adani University, Shantigram, Ahmedabad",
+        "country": "India",
+        "skills": "['HTML', 'C', 'MySQL', 'CSS']"
+    },
+    {
+        "name": "Madhur Prajapati",
+        "email": "madhur@prajapati.com",
+        "pass_word": "madhur",
+        "gender": "male",
+        "dateofbirth": "03/07/2004",
+        "m_no": "007007007",
+        "university": "Adani University",
+        "address": "Adani University, Shantigram, Ahmedabad",
+        "country": "India",
+        "skills": "['Python', 'C', 'PHP', 'C#']"
+    }
+]

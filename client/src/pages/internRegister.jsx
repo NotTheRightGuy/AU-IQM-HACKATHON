@@ -37,7 +37,9 @@ function InternRegister() {
                     <button
                         type="button"
                         onClick={() => {
+
                             window.location.href = "/profile-creation";
+
                         }}
                     >
                         Sign Up
