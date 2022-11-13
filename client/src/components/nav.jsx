@@ -6,9 +6,6 @@ class Nav extends Component {
     render() {
         return (
             <nav className="navbar navbar-expang-lg fixed-top navbarProfile">
-<<<<<<< Updated upstream
-                <div className="logo"><a href="/">InCo</a></div>
-=======
                 <div
                     className="logo"
                     onClick={() => {
@@ -17,7 +14,6 @@ class Nav extends Component {
                 >
                     DevBase
                 </div>
->>>>>>> Stashed changes
                 <div className="wrapper"></div>
 
                 <div className="navBarLinks">
