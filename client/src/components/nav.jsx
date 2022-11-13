@@ -12,7 +12,7 @@ class Nav extends Component {
                         window.location.href("/");
                     }}
                 >
-                    DevBase
+                    InCo
                 </div>
                 <div className="wrapper"></div>
 

@@ -18,7 +18,7 @@ export default class LandingPage extends Component {
                             window.open("/", "_self");
                         }}
                     >
-                        DevBase
+                        InCo
                     </div>
                     <div className="nav-links">
                         <a href="home">Home</a>
