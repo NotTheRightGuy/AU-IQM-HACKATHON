@@ -11,7 +11,7 @@ export default class Sign extends Component {
                         Failed Login.
                     </h1>
                     <p className="lead">
-                        Please try Again.
+                        Please try Again <a href="/sign" className="link-primary">here.</a>
                     </p>
                 </div>
                 {/* <hr /> */}
