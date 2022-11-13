@@ -1,0 +1,44 @@
+.profileCreationContainer {
+    display: flex;
+    height: 100vh;
+    background-color: #f2e7d5;
+    justify-content: center;
+    align-items: center;
+}
+
+.profileWindow {
+    border-radius: 20px;
+    height: 700px;
+    width: 800px;
+    /* background-color: #f7f7f7; */
+    box-shadow: black 1px 1px 10px;
+}
+
+.profileCreationHeader {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.profileWindow input {
+    padding-left: 20px;
+    margin-bottom: 50px;
+    border-radius: 12px;
+    /* background-color: lightblue; */
+    margin-left: 200px;
+    height: 50px;
+    width: 400px;
+}
+
+.profileCreationContainer input::placeholder {
+    padding-left: 20px;
+}
+
+.profileWindow button {
+    border-radius: 12px;
+    /* background-color: lightblue; */
+    /* height: 50px; */
+    /* padding: 20px;
+    margin-left: 350px; */
+}

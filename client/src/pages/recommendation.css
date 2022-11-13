@@ -1,0 +1,9 @@
+.jobCardContainer {
+    position: relative;
+}
+
+.acceptbtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
