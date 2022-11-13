@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { useState } from "react";
+import interData from "../../../databases/interns.json";
 import "../styles/internSignin.css";
 import "bootstrap/dist/css/bootstrap.css";
 
@@ -37,9 +38,12 @@ function InternRegister() {
                     <button
                         type="button"
                         onClick={() => {
-
+                            interData.push({
+                                name: name,
+                                email: mail,
+                                pass_word: password,
+                            });
                             window.location.href = "/profile-creation";
-
                         }}
                     >
                         Sign Up

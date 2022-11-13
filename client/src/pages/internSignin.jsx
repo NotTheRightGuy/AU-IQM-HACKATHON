@@ -2,13 +2,28 @@ import React, { Component } from "react";
 import { useState } from "react";
 import "../styles/internSignin.css";
 import "bootstrap/dist/css/bootstrap.css";
+import clientData from "../../../databases/interns.json";
 
 function InternSignIn() {
     const [mail, setMail] = useState("");
     const [password, setPassword] = useState("");
+    const [flag, setFlag] = useState(false);
+
     const handleSubmit = (e) => {
         e.preventDefault();
-        window.open("/intern/profile", "_self");
+        clientData.map((client) => {
+            if (!flag) {
+                if (client.email === mail && client.pass_word === password) {
+                    console.log(client);
+                    setFlag(true);
+                }
+            }
+        });
+        if (flag) {
+            window.location.href = "/Companydetails";
+        } else {
+            window.location.href = "/failed-login";
+        }
     };
     return (
         <section className="signContainer">
