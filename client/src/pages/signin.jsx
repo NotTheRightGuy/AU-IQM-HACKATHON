@@ -35,9 +35,23 @@ export default class Sign extends Component {
                         Indentify and Hire the best which matches your
                         requirements
                     </div>
-                    <button className="compLogin">Login</button>
+                    <button
+                        className="compLogin"
+                        onClick={() => {
+                            window.location.href = "/clientSignIn";
+                        }}
+                    >
+                        Login
+                    </button>
                     <div className="registerPrompt">Don't have an account?</div>
-                    <button className="compRegister">Register Here</button>
+                    <button
+                        className="compRegister"
+                        onClick={() => {
+                            window.location.href = "/clientRegister";
+                        }}
+                    >
+                        Register Here
+                    </button>
                 </div>
             </div>
         );

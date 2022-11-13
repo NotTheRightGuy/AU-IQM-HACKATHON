@@ -8,6 +8,8 @@ import Company from "./pages/company";
 import InternRegister from "./pages/internRegister";
 import About from "./pages/About";
 import Companydetails from "./pages/Companydetails";
+import ClientSignIn from "./pages/clientSignin";
+import ClientRegister from "./pages/clientRegister";
 
 
 import "./App.css";
@@ -51,7 +53,15 @@ const router = createBrowserRouter([
     {
         path: "/Companydetails",
         element: <Companydetails />,
-    }
+    },
+    {
+        path: "/clientSignin",
+        element: <ClientSignIn />,
+    },
+    {
+        path: "/clientRegister",
+        element: <ClientRegister />,
+    },
 ]);
 
 function App() {
