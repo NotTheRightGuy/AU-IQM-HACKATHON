@@ -10,6 +10,7 @@ function InternRegister() {
 
     async function handleRegister(event) {
         event.preventDefault();
+        console.log("Registering");
         const response = await fetch(
             "http://localhost:3000/api/intern/new-user",
             {

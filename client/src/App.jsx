@@ -8,7 +8,7 @@ import Company from "./pages/company";
 import InternRegister from "./pages/internRegister";
 import About from "./pages/About";
 import Companydetails from "./pages/Companydetails";
-import ClientSignIn from "./pages/clientSignin";
+import ClientSignIn from "./pages/clientSignin.jsx";
 import ClientRegister from "./pages/clientRegister";
 
 
