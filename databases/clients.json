@@ -1,0 +1,25 @@
+[{
+    "comp_name": "Google",
+    "comp_address": "Amphitheatre Parkway, Mountain View, California",
+    "comp_country": "USA",
+    "comp_mail": "support-in@google.com",
+    "comp_phone": "123987456",
+    "comp_website": "www.google.com",
+    "comp_password": "googlepassword"
+},
+{
+    "comp_name": "Microsoft",
+    "comp_address": "Redmond, Washington",
+    "comp_mail": "support-microsoft@outlook.com",
+    "comp_phone": "987123654",
+    "comp_website": "www.microsoft.com",
+    "comp_password": "microsoftpassword"
+},
+{
+    "comp_name": "Adani",
+    "comp_address": "Adani Corporate House, Shantigram, Ahmedabad",
+    "comp_mail": "xyz@adani.com",
+    "comp_phone": "7926565555",
+    "comp_website": "www.adani.com",
+    "comp_password": "adanipassword"
+}]
