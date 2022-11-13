@@ -50,8 +50,11 @@ function InternProfileCreation() {
                     <button
                         className="d-flex btn btn-outline-success btn-md btn-block text-align-center mx-auto mt-4"
                         type="submit"
-                        onClick={() => {
-                            window.location.href = "intern/profile";
+
+                        onClick={(e) => {
+                            e.preventDefault();
+                            window.location.href = ("intern/profile");
+
                         }}
                     >
                         Submit Profile

@@ -31,7 +31,7 @@ export default class LandingPage extends Component {
                 </nav>
                 <div className="content">
                     <div className="tagLine">
-                        The company which have partenered with us
+                        The Partner Companies
                     </div>
                     <div className="subLine">
                         Companies like SpaceX, Google, Tesla, OpenAI, Twitter,
