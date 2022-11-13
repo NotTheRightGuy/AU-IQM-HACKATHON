@@ -16,10 +16,14 @@ class Nav extends Component {
                 </div>
                 <div className="wrapper"></div>
 
-                <div className="navBarLinks">
-                    <a href="http://127.0.0.1:5500/client/src/pages/recommendation.html">
-                        Browse
-                    </a>
+                <div
+                    className="navBarLinks"
+                    style={{ cursor: "pointer" }}
+                    onClick={(e) => {
+                        window.open("/recommendation", "_self");
+                    }}
+                >
+                    Browse
                 </div>
             </nav>
         );
