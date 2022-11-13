@@ -56,7 +56,7 @@ function InternRegister() {
                     <button type="submit"
 
                         onClick={() => {
-                            window.location.href = "/internSignIn";
+                            window.location.href = "/interData";
                         }}
                     >
                         Sign Up</button>

@@ -11,6 +11,7 @@ import Companydetails from "./pages/Companydetails";
 import ClientSignIn from "./pages/clientSignin.jsx";
 import ClientRegister from "./pages/clientRegister";
 import Reviews from "./pages/reviews";
+import InterData from "./pages/reviews";
 
 import "./App.css";
 import { createBrowserRouter, RouterProvider, Route } from "react-router-dom";
@@ -66,6 +67,10 @@ const router = createBrowserRouter([
         path: "/reviews",
         element: <Reviews />,
     },
+    {
+        path: "/interData",
+        element: <InterData />
+    }
 ]);
 
 function App() {

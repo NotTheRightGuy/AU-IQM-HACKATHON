@@ -13,7 +13,7 @@ export default class LandingPage extends Component {
                             <span class="visually-hidden">Toggle Navigation</span>
                             <span class="navbar-toggler-icon"></span>
                         </button>
-                        <a href="http://localhost:5173/" class="navbar-brand ms-5">DevBase</a>
+                        <a href="http://localhost:5173/" class="navbar-brand ms-5">InCo</a>
                         <div class="ms-auto me-4">
                             <div class="float-end d-flex ">
                                 <a class="order-button btn btn-outline-light text-center fs-6" href="http://localhost:5173/profile">Account Settings</a>
