@@ -6,7 +6,7 @@ class Nav extends Component {
     render() {
         return (
             <nav className="navbar navbar-expang-lg fixed-top navbarProfile">
-                <div className="logo"><a href="/">DevBase</a></div>
+                <div className="logo"><a href="/">InCo</a></div>
                 <div className="wrapper"></div>
 
                 <div className="navBarLinks">
