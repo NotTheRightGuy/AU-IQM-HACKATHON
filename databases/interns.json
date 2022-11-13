@@ -1,0 +1,36 @@
+{
+    "name": "John Doe",
+    "email": "john@doe.com",
+    "pass_word": "johndoepassword",
+    "gender": "male",
+    "dateofbirth": "01/01/1991",
+    "m_no": "1234567890",
+    "university": "University of Toronto",
+    "address": "27 King's College Circle",
+    "country": "Canada",
+    "skills": "['HTML', 'CSS', 'JavaScript']"
+},
+{
+    "name": "Jane Doe",
+    "email": "jane@doe.com",
+    "pass_word": "janedoe",
+    "gender": "female",
+    "dateofbirth": "01/10/1992",
+    "m_no": "987654321",
+    "university": "Harvard University",
+    "address": "Cambridge, MA, United States",
+    "country": "USA",
+    "skills": "['PHP', 'Python', 'Java']"
+},
+{
+    "name": "Jane Doe",
+    "email": "jane@doe.com",
+    "pass_word": "janedoe",
+    "gender": "female",
+    "dateofbirth": "01/10/1992",
+    "m_no": "987654321",
+    "university": "Harvard University",
+    "address": "Cambridge, MA, United States",
+    "country": "USA",
+    "skills": "['PHP', 'Python', 'Java']"
+},
