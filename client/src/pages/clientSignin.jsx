@@ -1,4 +1,3 @@
-import React, { Component } from "react";
 import { useState } from "react";
 import "../styles/internSignin.css";
 import "bootstrap/dist/css/bootstrap.css";
@@ -6,16 +5,17 @@ import "bootstrap/dist/css/bootstrap.css";
 function InternSignIn() {
     const [mail, setMail] = useState("");
     const [password, setPassword] = useState("");
-
-    async function handleSubmit(event) {
-        event.preventDefault();
-    }
+    const reDirect = (e) => {
+        console.log("Clicked");
+        e.preventDefault();
+        window.location.href = "/profile";
+    };
 
     return (
         <section className="signContainer">
             <div className="signLeftWindow">
                 <div className="logIn">Log In</div>
-                <form onSubmit={handleSubmit}>
+                <form onSubmit={reDirect}>
                     <input
                         onChange={(e) => setMail(e.target.value)}
                         value={mail}
@@ -30,13 +30,7 @@ function InternSignIn() {
                         name="password"
                         placeholder="Password"
                     />
-                    <button type="submit"
-
-                        onClick={() => {
-                            window.location.href = "/companyDetails";
-                        }}
-                    >
-                        Sign In</button>
+                    <button type="submit">Sign In</button>
                 </form>
             </div>
             <div className="signRightWindow">
@@ -50,4 +44,3 @@ function InternSignIn() {
 }
 
 export default InternSignIn;
-

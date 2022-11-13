@@ -8,30 +8,11 @@ function InternRegister() {
     const [password, setPassword] = useState("");
     const [name, setName] = useState("");
 
-    async function handleRegister(event) {
-        event.preventDefault();
-        console.log("Registering");
-        const response = await fetch(
-            "http://localhost:3000/api/intern/new-user",
-            {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                },
-                body: JSON.stringify({
-                    name: name,
-                    mail: mail,
-                    password: password,
-                }),
-            }
-        );
-        const data = await response.json();
-    }
     return (
         <section className="signContainer">
             <div className="signLeftWindow">
                 <div className="logIn">Register</div>
-                <form onSubmit={handleRegister}>
+                <form>
                     <input
                         onChange={(e) => setName(e.target.value)}
                         value={name}
@@ -53,13 +34,16 @@ function InternRegister() {
                         name="password"
                         placeholder="Password"
                     />
-                    <button type="submit"
-
+                    <button
+                        type="button"
                         onClick={() => {
-                            window.location.href = "/interData";
+
+                            window.location.href = "/profile-creation";
+
                         }}
                     >
-                        Sign Up</button>
+                        Sign Up
+                    </button>
                 </form>
             </div>
             <div className="signRightWindow">
