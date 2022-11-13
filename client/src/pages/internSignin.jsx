@@ -2,13 +2,23 @@ import React, { Component } from "react";
 import { useState } from "react";
 import "../styles/internSignin.css";
 import "bootstrap/dist/css/bootstrap.css";
+import clientData from "../../../databases/interns.json";
 
 function InternSignIn() {
     const [mail, setMail] = useState("");
     const [password, setPassword] = useState("");
+
     const handleSubmit = (e) => {
         e.preventDefault();
-        window.open("/intern/profile", "_self");
+        clientData.map((item) => {
+            console.log(mail, password, item.email, item.pass_word);
+            if (item.email == mail && item.pass_word === password) {
+                window.location.href = "/Companydetails";
+                console.log("Success");
+            } else {
+                console.log("Wrong Cred");
+            }
+        });
     };
     return (
         <section className="signContainer">
