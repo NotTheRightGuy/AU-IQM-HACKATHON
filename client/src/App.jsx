@@ -12,6 +12,7 @@ import ClientSignIn from "./pages/clientSignin.jsx";
 import ClientRegister from "./pages/clientRegister";
 import Reviews from "./pages/reviews";
 import InterData from "./pages/reviews";
+import FailedLogin from "./pages/failed-login";
 
 import "./App.css";
 import { createBrowserRouter, RouterProvider, Route } from "react-router-dom";
@@ -70,7 +71,11 @@ const router = createBrowserRouter([
     {
         path: "/interData",
         element: <InterData />
-    }
+    },
+    {
+        path: "/failed-login",
+        element: <FailedLogin />
+    },
 ]);
 
 function App() {
