@@ -68,11 +68,14 @@ const router = createBrowserRouter([
         element: <ClientRegister />,
     },
     {
+<<<<<<< Updated upstream
         path: "/reviews",
         element: <Reviews />,
     },
     {
 
+=======
+>>>>>>> Stashed changes
         path: "/profile-creation",
         element: <InternProfileCreation />,
     },

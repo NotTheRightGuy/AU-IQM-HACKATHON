@@ -6,24 +6,10 @@ import "bootstrap/dist/css/bootstrap.css";
 function InternSignIn() {
     const [mail, setMail] = useState("");
     const [password, setPassword] = useState("");
-
-    async function handleSubmit(event) {
-        event.preventDefault();
-        console.log("Registering");
-        const response = await fetch("http://localhost:5000/api/intern/login", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-            },
-            body: JSON.stringify({
-                mail: mail,
-                password: password,
-                name: name,
-            }),
-        });
-        const data = await response.json();
-    }
-
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        window.open("/intern/profile", "_self");
+    };
     return (
         <section className="signContainer">
             <div className="signLeftWindow">
@@ -43,13 +29,9 @@ function InternSignIn() {
                         name="password"
                         placeholder="Password"
                     />
-                    <button type="submit"
-
-                        onClick={() => {
-                            window.location.href = "/profile";
-                        }}
-                    >
-                        Sign In</button>
+                    <button type="submit" onClick={handleSubmit}>
+                        Sign In
+                    </button>
                 </form>
             </div>
             <div className="signRightWindow">

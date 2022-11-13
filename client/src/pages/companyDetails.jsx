@@ -20,12 +20,9 @@ class Profile extends Component {
                                 />
                             </div>
                             <div className="otherInformation">
-                                <div className="profile-Name">
-                                    Delsion J. Rouge
-                                </div>
+                                <div className="profile-Name">Elon Musk</div>
                                 <div className="profileInfo">
-                                    Hello, I'm a passionate Web Developer Trying
-                                    my best to survive in this crazy world
+                                    Buying Twitter wasn't really a good idea.
                                 </div>
                             </div>
                         </div>
