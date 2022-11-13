@@ -42,7 +42,13 @@ function InternSignIn() {
                         name="password"
                         placeholder="Password"
                     />
-                    <button type="submit">Sign In</button>
+                    <button type="submit"
+
+                        onClick={() => {
+                            window.location.href = "/profile";
+                        }}
+                    >
+                        Sign In</button>
                 </form>
             </div>
             <div className="signRightWindow">
